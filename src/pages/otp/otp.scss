@@ -1,0 +1,87 @@
+.otp-wrapper {
+    background-repeat: round;
+    background:#FDFAEF;
+    border: #FFCEC1 14px solid;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 718px;
+    width: 100%;
+
+    .otp-content {
+        background: #FAF3DC;
+        border-radius: 50px;
+        display: flex;
+        margin-top: 104px;
+        width: calc(100% - 208px);
+        height: calc(100% - 242px);
+        flex-direction: column;
+
+        .otp {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 60px;
+            .phone-number {
+                input {
+                    width: 240px;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: none;
+                    padding: 5px;
+                }
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            p {
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 18px;
+                color: #363636;
+            }
+
+            .otp-inputs {
+                
+                display: flex;
+                align-items: center;
+                margin: 30px auto;
+                input {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: none;
+                    margin-right: 12px;
+                    background-color: #FFFFFF;
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+            button {
+                width: 135px;
+                height: 50px;
+                background: #FF9BA8;
+                border: 1px solid #FF9BA8;
+                border-radius: 100px;
+                margin: 0 auto;
+                cursor: pointer;
+                color: white;
+            }
+            a {
+                margin-top: 20px;
+                cursor: pointer;
+                color: #797979;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .input-unit {
+      width: 35% !important;
+    }
+}

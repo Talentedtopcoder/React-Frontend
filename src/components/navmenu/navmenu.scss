@@ -1,0 +1,23 @@
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    .alert {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .alert-circle {
+            position: absolute;
+            right: 0;
+        }
+    }
+    .avatar {
+        cursor: pointer;
+    }
+}

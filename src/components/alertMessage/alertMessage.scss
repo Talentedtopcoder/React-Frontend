@@ -1,0 +1,30 @@
+.alert-wrapper {
+    // position: absolute;
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    background-image: url('../../assets/images/alert-message.svg');
+    display: flex;
+    width: 290px;
+    height: 55px;
+    text-align: left;
+    padding: 15px;
+    padding-top: 29px;
+    padding-left: 29px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #434343;
+    justify-content: space-between;
+
+    button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+}

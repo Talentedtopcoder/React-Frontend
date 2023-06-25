@@ -1,0 +1,259 @@
+%form {
+    padding: 0 126px;
+    position: absolute;
+    top: 0;
+    background: #FFCBE6;
+    width: 100%;
+    height: 593px;
+    box-shadow: 0px 4px 4px rgba(136, 36, 44, 0.25);
+    border-radius: 0 0 86px 86px;
+    display: flex;
+    flex-direction: column;
+  
+    .lay-center {
+        
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            .radio-container {
+
+                .radio-label-text {
+                    display: flex;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 5px;
+                    color: #363636;
+                }
+                .radio-group {
+                    display: flex;
+                    gap: 10px;
+                    
+                    .radio-input {
+                        display: none;
+                    }
+                    .radio-label {
+                        padding: 4px 12px;
+                        border-radius: 100px;
+                        background: #FFFFFF;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #797979;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                        
+                    }
+                    .radio-input:checked + .radio-label {
+                        background-color: #FC82A9;
+                        color: #fff;
+                    }
+                }
+            }
+            
+            .input-row {
+                font-family: 'Poppins';
+                display: flex;
+                justify-content: space-between;
+                padding-top: 15px;
+
+                .input-unit {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                    
+
+
+                    .phone-number {
+                        display: flex;
+                    }
+
+                    input {
+                        font-family: Poppins;                        
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #797979;
+                        font-style: normal;
+                        
+                        border-radius: 8px;
+                        border: none;
+                        width: 100%;
+                        height: 40px;
+                        padding: 12px 11px 8px;
+                        &::placeholder {
+                            font-family: Poppins;                        
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #797979;
+                            font-style: normal;
+                        }
+                    }
+                    select {
+                        font-family: Poppins;                        
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #797979;
+                        font-style: normal;
+                        border-radius: 8px;
+                        border: none;
+                        width: 100%;
+                        height: 40px;
+                        padding: 12px 11px 8px;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-image: url('../../assets/images/down.svg');
+                        background-repeat: no-repeat;
+                        background-position: right 11px top 11px;
+                        background-size: 20px; /* Adjust the size of the SVG image */
+
+                        &:focus {
+                            outline: none; /* Remove the default outline */
+                            border-color: transparent; /* Set the border color to transparent */
+
+                        }
+
+                      
+                        &::-ms-expand {
+                            display: none;
+                        }
+                        option {
+
+                        }
+                    } 
+
+                    label {
+                        display: flex;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 5px;
+                        color: #363636;
+                        white-space: nowrap;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #FF334D;
+                    }
+                }
+            }
+        }
+
+        .save-next {
+            display: flex;
+            margin-top: 40px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                width: 136px;
+                height: 50px;
+                border-radius: 100px;
+                background: #FFFFFF;
+                color: #363636;
+                margin-right: 16px;
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 136px;
+                height: 50px;
+                border-radius: 100px;
+                background: #FF9BA8;
+                color: #363636;
+                border: none;
+            }
+        }
+        
+    }
+    .subtract {
+        // margin-top: 150px;
+        margin-bottom: 18px;
+    }
+}
+.namaste-wrapper {
+    background-repeat: round;
+    background:#FDFAEF;
+    border: #FFCEC1 14px solid;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+        font-family: 'Limelight', cursive;
+        font-size: 60px;
+        margin-top: 36px;
+        margin-bottom: 25px;
+    }
+
+    .namaste-content {
+        position: relative;
+        border-radius: 0 0 86px 86px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        
+        .form1 {
+            @extend %form;
+            top: 89px;
+        }
+        .form2 {
+            @extend %form;
+            background: #FFCEC1;
+            height: 588px;
+            transition: height 0.1s ;
+
+        }
+        .form3 {
+            @extend %form;
+            background: #FAF3DC;
+            height: 504px;
+            transition: height 0.1s;
+            .lay-center{
+                .input-group{
+                    .input-row{
+                        .input-unit{
+                            label {
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                }
+                .zodiac {
+                    flex: 1;
+                }
+            }
+        }
+        
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    
+    %form {
+        padding: 0 70px;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+
+
+}
